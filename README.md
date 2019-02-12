@@ -1,5 +1,37 @@
-# mikapost-go
-The web platform for buying and selling comic books online. The ``go`` repository is the back-end service which powers a front-end service.
+# MikaPost (Golang)
+**(Currently under development)**
+
+MikaPost is time-series data *storage* and *sharing* platform. Create **”boxes”** where you can place **“things”** into to be populated with with any sort of **time-series data**.
+
+What is a **box**? A box could be anything that you’d like to organization by. Here are a few examples:
+
+* Census for the current year
+* Financial record for a customer
+* A particular science experiment
+* Engineering data for a prototype
+* Medical records for a patient
+* Home automation for particular IoT devices
+* Industrial site operating sensors
+
+What is a **thing**? A thing could be anything you’d like to tag for the *time-series data* that you’ll be uploading. Here are a few examples:
+
+* The hours spent by city council in meeting
+* Customer purchase amount ($) over time
+* The population size for a cell-culture over time
+* Tensile strength of a material in an automotive product
+* Apple HealthKit walking data
+* Home temperature sensor
+* Battery level of some machine
+
+Current features include:
+
+* Organize multiple “Things” under a “Box”
+* Grant read or read/write access to other users for a “Box” / “Thing”
+* Make a “Box”or “Thing" public to be used by the public
+* CRUD operations on time-series data
+
+
+This repository is the go implementation of the web-service backend which is interacted with a JS single page app.
 
 ## Installation
 1. Get the latest code.
@@ -9,7 +41,7 @@ The web platform for buying and selling comic books online. The ``go`` repositor
   ```
 
 
-2. Open up postgres and run the following to setup the database for development or production.
+2. Open up ``postgre``s and run the following to setup the database for **development** or **production**.
 
   ```sql
   drop database mikapost_db;
@@ -23,7 +55,7 @@ The web platform for buying and selling comic books online. The ``go`` repositor
   ```
 
 
-3. Run the following to setup the database for unit testing.
+3. Run the following to setup the database for **unit testing**.
 
   ```sql
   drop database mikapost_test_db;
@@ -37,7 +69,7 @@ The web platform for buying and selling comic books online. The ``go`` repositor
   ```
 
 
-4. Install our dependencies
+4. Install the project dependencies.
 
   ```
   ./requirements.sh
