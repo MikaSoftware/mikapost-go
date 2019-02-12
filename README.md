@@ -46,3 +46,7 @@ This repository is the go implementation of the web-service backend which is int
 * [(DevOps Part 3) Setup Lets Encrypt](/docs/DevOps-3-Setup-Lets-Encrypt.md)
 
 * [API Reference](/docs/Dev-x-API-Reference.md)
+
+
+## License
+This library is licensed under the **BSD 3-Clause license**. See [LICENSE](LICENSE) for more information.
