@@ -39,6 +39,10 @@ This repository is the go implementation of the web-service backend which is int
 
 * [Install on MacOS / Linux for development](/docs/Dev-1-Setup-and-Install.md)
 
-* [Install on CentOS 7 for production](/docs/DevOps-1-Setup-and-install-on-raspbian.md)
+* [(DevOps Part 1) Install on CentOS 7 for production ](/docs/DevOps-1-Setup-DigitalOcean-CentOS-7.md)
+
+* [(DevOps Part 2) Setup project](/docs/DevOps-2-Setup-Project.md)
+
+* [(DevOps Part 3) Setup Lets Encrypt](/docs/DevOps-3-Setup-Lets-Encrypt.md)
 
 * [API Reference](/docs/Dev-x-API-Reference.md)
