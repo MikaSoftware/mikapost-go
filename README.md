@@ -25,11 +25,12 @@ What is a **thing**? A thing could be anything you’d like to tag for the *time
 
 Current features include:
 
-* Organize multiple “Things” under a “Box”
-* Grant read or read/write access to other users for a “Box” / “Thing”
-* Make a “Box”or “Thing" public to be used by the public
+* Organize multiple things under a box.
+* Grant read or read/write access to other users for a box / thing.
+* Set a box or thing to be public to be used by the public or set them to be private to restrict access.
+* Keep boxes and things private but share them with users who don't have an account through "private URLs".
 * CRUD operations on time-series data
-
+* User registration / Login
 
 This repository is the go implementation of the web-service backend which is interacted with a JS single page app.
 
