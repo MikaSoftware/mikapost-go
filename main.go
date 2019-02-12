@@ -50,6 +50,19 @@ func main() {
 	r.Get("/api/v1/public/version", controller.HealthCheckFunc)
 	r.Post("/api/v1/public/register", controller.RegisterFunc)
     r.Post("/api/v1/public/login", controller.LoginFunc)
+	//TODO: PASSWORD RESET
+
+    //TODO: PUBLIC BOX + DATA
+	//TODO: PUBLIC THING + DATA
+
+	//TODO: SHAREABLE BOX + DATA
+	// /api/v1/public/<shareable_code>
+	// /api/v1/public/<shareable_code>/t/<thing_id>/
+	// /api/v1/public/<shareable_code>/t/<thing_id>/data
+
+	//TODO: SHAREABLE THING + DATA
+	// /api/v1/public/<shareable_code>/
+	// /api/v1/public/<shareable_code>/data
 
     //------------------------------------------------------------------------//
 	// Load up our protected API endpoints. The following API endpoints can   //

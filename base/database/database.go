@@ -50,6 +50,7 @@ func Instance() (*DataAcessObject) {
     // http://doc.gorm.io/
 
     // // Automatically delete previous database schema.
+    // db.Debug().DropTableIfExists(&model.ShareableLink{})
     // db.Debug().DropTableIfExists(&model.TimeSeriesDatum{})
     // db.Debug().DropTableIfExists(&model.UserThingPermission{})
     // db.Debug().DropTableIfExists(&model.Thing{})
@@ -64,6 +65,7 @@ func Instance() (*DataAcessObject) {
     db.Debug().AutoMigrate(&model.Thing{})
     db.Debug().AutoMigrate(&model.UserThingPermission{})
     db.Debug().AutoMigrate(&model.TimeSeriesDatum{})
+    db.Debug().AutoMigrate(&model.ShareableLink{})
 
     // Keep an instance of our new object.
     dao = &DataAcessObject{
@@ -76,6 +78,7 @@ func Instance() (*DataAcessObject) {
 
 func (instance *DataAcessObject) DropAndCreateDatabase() {
     // Automatically delete previous database schema.
+    instance.dbPool.Debug().DropTableIfExists(&model.ShareableLink{})
     instance.dbPool.Debug().DropTableIfExists(&model.TimeSeriesDatum{})
     instance.dbPool.Debug().DropTableIfExists(&model.Thing{})
     instance.dbPool.Debug().DropTableIfExists(&model.UserThingPermission{})
@@ -90,6 +93,7 @@ func (instance *DataAcessObject) DropAndCreateDatabase() {
     instance.dbPool.Debug().AutoMigrate(&model.Thing{})
     instance.dbPool.Debug().AutoMigrate(&model.UserThingPermission{})
     instance.dbPool.Debug().AutoMigrate(&model.TimeSeriesDatum{})
+    instance.dbPool.Debug().AutoMigrate(&model.ShareableLink{})
 }
 
 func (instance *DataAcessObject) GetORM() (*gorm.DB) {
