@@ -1,0 +1,9 @@
+go get github.com/lib/pq
+go get github.com/jinzhu/gorm
+go get github.com/go-chi/chi
+go get github.com/go-chi/chi/middleware
+go get github.com/go-chi/docgen
+go get github.com/go-chi/render
+go get github.com/go-chi/jwtauth
+go get github.com/go-chi/valve
+go get github.com/shopspring/decimal
